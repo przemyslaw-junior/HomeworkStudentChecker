@@ -29,14 +29,14 @@ public class HomeworkStudentChecker {
         thirdStudent.email = "MarekK@gmail.com";
         thirdStudent.nrIndeksu = 3;
 
-        Student[] studentInCamp = new Student[4];
-        studentInCamp[1] = firstStudent;
-        studentInCamp[2] = secondStudent;
-        studentInCamp[3] = thirdStudent;
+        Student[] studentInCamp = new Student[3];
+        studentInCamp[0] = firstStudent;
+        studentInCamp[1] = secondStudent;
+        studentInCamp[2] = thirdStudent;
 
-        for (int i = 1; i < studentInCamp.length; i++){
+        for (int i = 0; i < studentInCamp.length; i++){
 
-            System.out.println("Student na liście " + i);
+            System.out.println("Student na liście " + (i+1));
             studentInCamp[i].infoStudent();
         }
     }
